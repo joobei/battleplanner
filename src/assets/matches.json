@@ -11,6 +11,30 @@
             "title": "OK Clan",
             "map": "UTAH",
             "date": "2012-04-24T18:25:43.511Z"
+        },
+        {
+            "id": 3,
+            "title": "Evil Clan",
+            "map": "HURTGEN",
+            "date": "2012-04-24T18:25:43.511Z"
+        },
+        {
+            "id": 4,
+            "title": "Clan",
+            "map": "HURTGEN",
+            "date": "2012-04-24T18:25:43.511Z"
+        },
+        {
+            "id": 5,
+            "title": "Good Clan",
+            "map": "HURTGEN",
+            "date": "2012-04-24T18:25:43.511Z"
+        },
+        {
+            "id": 6,
+            "title": "Evil Clan",
+            "map": "HURTGEN",
+            "date": "2012-04-24T18:25:43.511Z"
         }
     ]
 }
