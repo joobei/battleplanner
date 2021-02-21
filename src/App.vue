@@ -6,30 +6,23 @@
     </div>
     <div id="bottom">
       <div id="left_nav_pane">
-        <Navicon icon_name=home></Navicon>
+        <Navicon icon_name=home />
+        <Navicon icon_name=user />
       </div>
       <div id="main_content">
-        <div v-for="data in myJson.matches" v-bind:key="data.id">
-          <Match v-bind:match_data="data" />
-        </div>
+        <router-view/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Match from "./components/Match";
-import json from "./assets/matches.json";
 import Navicon from "./components/Navicon";
 
 export default {
   name: "app",
-  components: { Match, Navicon },
-  data() {
-    return {
-      myJson: json,
-    };
-  },
+  components: { Navicon },
+  
 };
 </script>
 

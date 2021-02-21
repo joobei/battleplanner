@@ -1,7 +1,21 @@
 import { createApp } from 'vue'
-import { FontAwesomeIcon } from "@/plugins/font-awesome";
-
+import { FontAwesomeIcon } from "@/font-awesome"
+import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
+import Matchlist from './components/Matchlist'
 
+const routes = 
+[
+    {
+        path:'/',
+        name:'Home',
+        component: Matchlist
+    }
+]
 
-createApp(App).component("fa", FontAwesomeIcon).mount('#app')
+const router = createRouter({
+  history: createWebHistory('/base-directory/'),
+  routes // short for `routes: routes`
+})
+
+createApp(App).use(router).component("fa", FontAwesomeIcon).mount('#app')
