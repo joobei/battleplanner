@@ -1,0 +1,15 @@
+{
+    "members": [
+        {
+            "id": 1,
+            "name":"Frank",
+            "rank":"Clanleader"
+        },
+        {
+            "id": 2,
+            "name":"Jubei",
+            "rank":"Member"
+
+        }
+    ]
+}

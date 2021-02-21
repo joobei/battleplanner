@@ -6,14 +6,14 @@
     </div>
     <div id="bottom">
       <div id="left_nav_pane">
-        <Navicon icon_name=home />
-        <Navicon icon_name=user />
+        <Navicon icon_name=home link_target="/" />
+        <Navicon icon_name=user link_target="/members" />
       </div>
       <div id="main_content">
-        <router-view/>
-      </div>
+        <router-view />
+     </div>
     </div>
-  </div>
+  </div> 
 </template>
 
 <script>
