@@ -8,19 +8,16 @@
       {{ match_data.id }} - {{ match_data.title }} - {{ match_data.map }} -
       {{ match_data.date }}
     </span>
-    <div v-if="hover" class="icons">
-      <fa icon="trash" class="faicon fa-spin-hover"></fa>
-    </div>
-    <div v-if="hover" class="icons">
-      <fa icon="edit" class="faicon fa-spin-hover"></fa>
-    </div>
+    <ListEditIcons v-if="hover" />
   </div>
 </template>
 
 <script>
+import ListEditIcons from './ListEditIcons';
 export default {
   name: "Match",
   props: ["match_data"],
+  components: {ListEditIcons},
   data() {
     return {
       hover: false,
@@ -41,35 +38,5 @@ export default {
   color: #fff;
 }
 
-.faicon {
-  width: 2vh;
-}
 
-@keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  33% {
-    transform: rotate(15deg);
-  }
-  66% {
-    transform: rotate(-15deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-.fa-spin-hover {
-  display: inline-block;
-  animation: none;
-}
-.fa-spin-hover:hover {
-  color: red;
-  animation: wiggle 1s infinite;
-}
-
-.icons {
-  width: 15%;
-  float: right;
-}
 </style>
